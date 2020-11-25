@@ -9,7 +9,7 @@ _start:
 	mov ebx, 1 	 	; use stdout as the fd
 	mov ecx, message 	; use the message as the buffer
         mov edx, message_length ; supply mess len
-	int 0x80 		; invoke syscall
+	int 0x80 		; invoke syscall    int is interrupt handler
 
 	; now exit
 	
