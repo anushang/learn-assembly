@@ -1,4 +1,4 @@
-; hello
+; generic comment
 
 global _start
 ; program instrtucktions
@@ -23,5 +23,5 @@ _start:
 ; 0xA argument
 ; db bytes
 section .data:
-	message: db "hello world!", 0xA
+	message: db "hello world!", 0xA    ;0xA is \n newline
 	message_length equ $-message
